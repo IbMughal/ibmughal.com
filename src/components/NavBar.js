@@ -1,6 +1,10 @@
 import { Navbar, Container } from "react-bootstrap"
+import { useState } from "react"
 
 export const NavBar = () => {
+    const [activeLink, setActiveLink] = useState('home');
+    const [scrolled, seScrolled] = useState (false);
+
     return (
         <nav class="navbar" style="background-color: #FFFFFF;">
             <div class="container-fluid">
@@ -23,6 +27,7 @@ export const NavBar = () => {
                             <a class = "nav-link" href="#"> <img src=""/> </a>
                             <a class = "nav-link" href="#"> <img src=""/> </a>
                         </div>
+                        <button> className="vvd" onClick={() => console.log ('connect')}<span>CONTACT</span></button>
                     </span>
                 </div>
             </div>
