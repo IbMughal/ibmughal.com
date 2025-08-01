@@ -21,7 +21,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: black !important;
+  background-color: #fff;
   color: #ffffff !important;
   font-family: Helvetica, sans-serif !important;
 }
@@ -43,10 +43,11 @@ a:hover {
   text-decoration: none;
 }
 
+/*
 img {
   width: 100%;
   height: auto;
-}
+}*/
 
 button {
   border: 0;
@@ -134,7 +135,7 @@ transition: 0.3s ease-in-out;
 }
 .social-icon a img {
   width: 40%;
-  z-index 1;
+  z-index: 1;
   transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
