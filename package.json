@@ -2,7 +2,7 @@
   "name": "ibmughal.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ibmughal.com",
+  "homepage": "https://www.ibmughal.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
