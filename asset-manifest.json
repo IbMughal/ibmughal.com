@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c6a954fe.css",
+    "main.js": "/static/js/main.3431cd4a.js",
+    "static/js/787.43ecf492.chunk.js": "/static/js/787.43ecf492.chunk.js",
+    "static/media/sawsanERRTHANG.png": "/static/media/sawsanERRTHANG.eec52bfbe3f3a7782aba.png",
+    "static/media/Bethany Elingston.otf": "/static/media/Bethany Elingston.df05ad013c71a3724f0f.otf",
+    "static/media/sawsan heart svg.svg": "/static/media/sawsan heart svg.e7f3a2fa902c00e2b5fa7be7d96c2884.svg",
+    "index.html": "/index.html",
+    "main.c6a954fe.css.map": "/static/css/main.c6a954fe.css.map",
+    "main.3431cd4a.js.map": "/static/js/main.3431cd4a.js.map",
+    "787.43ecf492.chunk.js.map": "/static/js/787.43ecf492.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6a954fe.css",
+    "static/js/main.3431cd4a.js"
+  ]
+}
