@@ -1,5 +1,6 @@
 import './App.css';
 import NavBar from "./components/NavBar";
+import MusicPlayer from "./components/MusicPlayer";
 import collageImage from './assets/sawsanERRTHANG.png';
 import heartSvg from './assets/sawsan heart svg.svg';
 import { useEffect } from 'react';
@@ -30,13 +31,13 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="app-container">
       <NavBar />
+      <MusicPlayer />
       {/* Heart Reveal Section */}
       <div style={{
         width: '100%',
         height: '100vh',
-        backgroundColor: 'white',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -61,6 +62,34 @@ function App() {
       </div>
 
       <style>{`
+        .app-container {
+          min-height: 100vh !important;
+          position: relative !important;
+          background: radial-gradient(circle, #ff8c42, #ffb3d9, #c084fc) !important;
+        }
+
+        .app-container::before {
+          content: '' !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 0 !important;
+          background: radial-gradient(circle, #c084fc, #ff8c42, #ffb3d9) !important;
+          opacity: 0 !important;
+          animation: gradientPulse 5s ease-in-out infinite !important;
+          z-index: -1 !important;
+        }
+
+        @keyframes gradientPulse {
+          0%, 100% {
+            opacity: 0 !important;
+          }
+          50% {
+            opacity: 1 !important;
+          }
+        }
+
         .heart-reveal {
           width: min(520px, 90vw) !important;
           aspect-ratio: 1 !important;
