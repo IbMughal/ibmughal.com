@@ -6,36 +6,36 @@ import heartSvg from './assets/sawsan heart svg.svg';
 import { useEffect } from 'react';
 
 function App() {
-  useEffect(() => {
-    const heartReveal = document.querySelector('.heart-reveal');
+  // useEffect(() => {
+  //   const heartReveal = document.querySelector('.heart-reveal');
     
-    function toggleReveal() {
-      const isRevealed = heartReveal.getAttribute('data-revealed') === 'true';
-      heartReveal.setAttribute('data-revealed', !isRevealed);
-    }
+  //   function toggleReveal() {
+  //     const isRevealed = heartReveal.getAttribute('data-revealed') === 'true';
+  //     heartReveal.setAttribute('data-revealed', !isRevealed);
+  //   }
     
-    heartReveal.addEventListener('click', toggleReveal);
+  //   heartReveal.addEventListener('click', toggleReveal);
     
-    heartReveal.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleReveal();
-      }
-    });
+  //   heartReveal.addEventListener('keydown', function(e) {
+  //     if (e.key === 'Enter' || e.key === ' ') {
+  //       e.preventDefault();
+  //       toggleReveal();
+  //     }
+  //   });
 
-    // Cleanup function
-    return () => {
-      heartReveal.removeEventListener('click', toggleReveal);
-      heartReveal.removeEventListener('keydown', toggleReveal);
-    };
-  }, []);
+  //   // Cleanup function
+  //   return () => {
+  //     heartReveal.removeEventListener('click', toggleReveal);
+  //     heartReveal.removeEventListener('keydown', toggleReveal);
+  //   };
+  // }, []);
 
   return (
     <div className="app-container">
-      <NavBar />
-      <MusicPlayer />
+      {/* <NavBar /> */}
+      {/* <MusicPlayer /> */}
       {/* Heart Reveal Section */}
-      <div style={{
+      {/* <div style={{
         width: '100%',
         height: '100vh',
         display: 'flex',
@@ -59,13 +59,13 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <style>{`
         .app-container {
           min-height: 100vh !important;
           position: relative !important;
-          background: radial-gradient(circle, #ff8c42, #ffb3d9, #c084fc) !important;
+          background: white !important;
         }
 
         .app-container::before {
